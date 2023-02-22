@@ -16,5 +16,16 @@ public class Test1 {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+
+        new Runnable(){
+            @Override
+            public void run() {
+                System.out.println("ss");
+            }
+        };
+
+        Runnable r2 = () -> {
+            System.out.println("ss");
+        };
     }
 }
